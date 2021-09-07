@@ -30,7 +30,7 @@ For every album, the form should ask a user for:
 * Artist: selected from a list of options
 * Type: single (single song), EP (not enough to be considered a full album), album
 * Description: text area
-* Tracks: text, max 10
+* Tracks: text, only 10 inputs
 
 Use [w3school](https://www.w3schools.com/html/html_forms.asp) for references about form inputs.
 There are more HTML tag that can be used with forms that are not input: *hint* [textarea](https://www.w3schools.com/tags/tag_textarea.asp).
@@ -44,6 +44,9 @@ Here is an example of part of the form:
 ![Example Form](examples/images/form.png)
 
 *Why does the form not look like the example image?*
+
+In this example, we only allow for an album to have 10 tracks, not more or less.
+*Is it possible to have any number of tracks? How?*
 
 ## Exercise: add style
 
