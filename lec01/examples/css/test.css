@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+
+}
+h1{
+    color: azure;
+    text-align: center;
+}
+
+#myForm
+{
+
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    align-items: center;
+    text-align: center;
+}
+
+#myForm>div{
+
+}
+
+
+
+#radioButtons
+{
+    display: flex;
+    flex-direction: row;
+}
+
