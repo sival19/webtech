@@ -40,7 +40,7 @@ Use the different HTTP methods and see how they differ.
 *Which method should be used in this case?*
 
 Here is an example of part of the form:
-![Example Form](images/form.png)
+![Example Form](examples/images/form.png)
 *Why does the form not look like the example image?*
 
 ## Exercise: add style
