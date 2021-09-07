@@ -34,7 +34,7 @@ For every album, the form should ask a user for:
 
 Use [w3school](https://www.w3schools.com/html/html_forms.asp) for references about form inputs.
 There are more HTML tag that can be used with forms that are not input: *hint* [textarea](https://www.w3schools.com/tags/tag_textarea.asp).
-*Which other tags can be used*
+*Which other tags can be used?*
 
 Use the different HTTP methods and see how they differ.
 *Which method should be used in this case?*
