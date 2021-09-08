@@ -13,7 +13,7 @@ You can see a tutorial on how to use the Live Server [here](https://www.youtube.
 
 Finally we also suggest the use of [PhpStorm](https://www.jetbrains.com/phpstorm/), a JetBrains PHP, HTML and JavaScript IDE.
 In this course we are going to see PHP, HTML and JavaScript; PhpStorm is built specifically to support this technologies.
-Nevertheless, any good editor or IDE is going to work with these technologies. You can enable the same functionality of Live Server by isntalling the [Live Edit extension](https://plugins.jetbrains.com/plugin/7007-live-edit)
+Nevertheless, any good editor or IDE is going to work with these technologies. You can enable the same functionality of Live Server by installing the [Live Edit extension](https://plugins.jetbrains.com/plugin/7007-live-edit)
 
 We do not force you which tools you want to use.
 We suggest you to find an editor that suits you and learn it well: *The editor should be an extension of your hand...* (From 'The Pragmatic Programmer' by Andrew Hunt and Davit Thomas)
