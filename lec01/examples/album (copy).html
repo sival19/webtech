@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <meta charset="UTF-8">
+    <title>Album thingy</title>
+</head>
+<h1> Make A New Album!</h1>
+<body>
+<form id="myForm">
+    <label for="albumName"> Name of the album </label>
+    <input type="text" id="albumName"/>
+
+    <label for="releaseYear">Year of release</label>
+    <input type="number" id="releaseYear"/>
+
+    <label for="artists">Select Artist</label>
+    <select id="artists"> </select> <br>
+
+    <div id="radioButtons">
+        <label for="EP"> Select a type</label>
+        <input type="radio" id="EP" value="EP" name="selection"> EP </input>
+
+        <label for="Album"> </label>
+        <input type="radio" id="Album" value="Album" name="selection"> Album </input>
+
+        <label for="Single"> </label>
+        <input type="radio" id="Single" value="Single" name="selection"> Single </input>
+    </div>
+
+    <label for="Description"> Description </label>
+    <textarea id="Description">Insert description here</textarea>
+
+    <label for="tracks"> Tracks </label>
+    <input type="text" id="tracks"/>
+
+
+</form>
+
+
+</body>
+</html>
