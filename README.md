@@ -9,6 +9,7 @@ class.
 ### HTML and CSS
 
 - HTML resource: [W3Schools](https://www.w3schools.com/)
+- HTML and CSS tutoria: [MarkSheet](https://marksheet.io/)
 - CSS Layout:
   - [Flexbox](https://www.w3schools.com/csS/css3_flexbox.asp)
   - [Grid Layout](https://www.w3schools.com/css/css_grid.asp)
