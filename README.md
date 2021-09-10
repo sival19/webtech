@@ -8,7 +8,7 @@ class.
 
 ### HTML and CSS
 
-- HTML resource: [W3Schools](w3schools.com)
+- HTML resource: [W3Schools](https://www.w3schools.com/)
 - CSS Layout:
   - [Flexbox](https://www.w3schools.com/csS/css3_flexbox.asp)
   - [Grid Layout](https://www.w3schools.com/css/css_grid.asp)
