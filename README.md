@@ -4,6 +4,16 @@ This repository contains course material (code examples and exercises) for 'Web 
 The repository has a separate directory for each lecture / exercise
 class.
 
+## Resources
+
+### HTML and CSS
+
+- HTML resource: [W3Schools](w3schools.com)
+- CSS Layout:
+  - [Flexbox](https://www.w3schools.com/csS/css3_flexbox.asp)
+  - [Grid Layout](https://www.w3schools.com/css/css_grid.asp)
+- CSS Framework: [Bootstrap](https://getbootstrap.com/)
+
 ## Software
 
 We aim for using tools that work across platforms.
