@@ -1,7 +1,7 @@
 ## Before Exercises:
 
 Before the exercise, if you want to work with jQuery, you need to add it to your HTML file.
-There are several ways of doing this, including downloading the js file in the [official web page](https://jquery.com/).
+There are several ways of doing this, including downloading the js file from the [official web page](https://jquery.com/).
 You can also link a jQuery file already provided in a [server](https://code.jquery.com/) (in this case, use *minified* version).
 
 We are going to use a docker image for the exercises.
@@ -38,14 +38,15 @@ An example of the view can be seen here:
 ## Exercise: Form Validation Part 1
 
 You have noticed that you can send any data in the inputs, or not sending data at all (empty fields).
-Now it is your job to prevent this, you are going to validate the form before being submitted.
+Now it is your job to prevent this.
+You are going to validate the form before being submitted.
 
 To do this, you can capture the ``onsubmit`` event of a form.
 Look at the [jQuery documentation](https://api.jquery.com/submit/).
 
-When the form is not valid, you should notify the user that something went wrong and stop the submission of the form.
+When the form is not valid, you should notify the user that something went wrong with an alert or a message, and stop the submission of the form.
 If it is valid, it should submit as normal.
-In this case, an extra message or an alert is enough.
+
 
 ## Exercise: Form Validation Part 2
 
@@ -76,7 +77,7 @@ Because the response of the server is a JSON object, before using the data you s
 
 ## Extra exercise: More about JavaScript
 
-Now that you feel more comfortable with JavaScript and DOM manipulation, you are going to develop a simple game [Nim](https://en.wikipedia.org/wiki/Nim).
+Now that you feel more comfortable with JavaScript and DOM manipulation, you are going to develop a game, [Nim](https://en.wikipedia.org/wiki/Nim).
 Start with a simple version:
 
 * Start with a fixed number of sticks, e.g., 20 with only 1 heap.
