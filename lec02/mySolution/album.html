@@ -15,28 +15,42 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
+
+
 <script>
+
+    let counter = 0;
 
     function addElement() {
 
-        let x = document.getElementById("testing");
-        let new_field = document.createElement("input");
-        // set input field data type to text
-        new_field.setAttribute("type", "text");
-        new_field.setAttribute("id", "test")
-        // set input field name
-        new_field.setAttribute("name", "text_field[]");
-        // select last position to insert element before it
-        let pos = x.childElementCount;
-        // insert element
-        x.insertBefore(new_field, x.childNodes[pos]);
-        console.log(x.insertBefore(new_field, x.childNodes[pos]))
+        if (counter < 20 ) {
+
+            let x = document.getElementById("testing");
+            let new_field = document.createElement("input");
+            // set input field data type to text
+            new_field.setAttribute("type", "text");
+            new_field.setAttribute("id", "test")
+            // set input field name
+            new_field.setAttribute("name", "text_field[]");
+            // select last position to insert element before it
+            let pos = x.childElementCount;
+            // insert element
+            x.insertBefore(new_field, x.childNodes[pos]);
+            counter += 1;
+            console.log(x.insertBefore(new_field, x.childNodes[pos]))
+            console.log(counter);
+        } else window.alert("stop making impossible cd's we still dont know what mp3 is");
     }
 
 </script>
 <script>function removeElement() {
-    let x = document.getElementById("test");
-    x.remove()
+    if (counter>0){
+        let x = document.getElementById("test");
+        x.remove()
+        counter -= 1;
+        console.log(counter);
+    } else window.alert("you cannot remove anymore");
+
 }</script>
 <script>
 
