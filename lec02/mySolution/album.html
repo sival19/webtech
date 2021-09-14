@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/test.css">
+    <!--    <link rel="stylesheet" type="text/css" href="../css/test.css">-->
     <meta charset="UTF-8">
     <title>Album thingy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 </head>
-<h1> Make A New Album!</h1>
 <body>
-<form id="myForm">
-    <label for="albumName"> Name of the album </label>
-    <input type="text" id="albumName"/>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script>function addTrack() {
+    console.log('added the track');
+}</script>
+<script>
 
-    <label for="releaseYear">Year of release</label>
-    <input type="number" id="releaseYear"/>
+    function addElement(){
+        aValue = document.getElementById("validationCustom05").value
+        document.getElementById("validationCustom06").value = aValue;
+    }
 
-    <label for="artists">Select Artist</label>
-    <select id="artists"> </select> <br>
+</script>
 
-    <div id="radioButtons">
-        <label for="EP"> Select a type</label>
-        <input type="radio" id="EP" value="EP" name="selection"> EP </input>
 
-        <label for="Album"> </label>
-        <input type="radio" id="Album" value="Album" name="selection"> Album </input>
+<div class="container">
+    <!-- Content here -->
 
-        <label for="Single"> </label>
-        <input type="radio" id="Single" value="Single" name="selection"> Single </input>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Album name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Name of the album" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-2">
+            <label for="validationCustom02" class="form-label">Release year</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Year of release..." required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-md-2">
+            <label for="validationCustom04" class="form-label">Artist</label>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose an artist</option>
+                <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid artist.
+            </div>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Single
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                EP
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Album
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <label for="validationCustom05" class="form-label">Tracks</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <input type="text" class="form-control" id="validationCustom06" required>
+                <input type="text" class="form-control" id="validationCustom07" required>
+                <input type="text" class="form-control" id="validationCustom08" required>
+                <input type="text" class="form-control" id="validationCustom09" required>
+                <input type="text" class="form-control" id="validationCustom10" required>
+                <input type="text" class="form-control" id="validationCustom11" required>
+                <input type="text" class="form-control" id="validationCustom12" required>
+                <input type="text" class="form-control" id="validationCustom13" required>
+                <div class="invalid-feedback">
+                    Please provide a tack.
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Save the album</button>
+        </div>
+
+
+    </form>
+
+    <div class="col-md-5">
+        <button onclick="removeTrack()" type="submit" class="btn btn-secondary">remove track</button>
     </div>
 
-    <label for="Description"> Description </label>
-    <textarea id="Description">Insert description here</textarea>
-
-    <label for="tracks"> Tracks </label>
-    <input type="text" id="tracks"/>
-    <button>delete track</button>
-    <button>add track</button>
-
-
-</form>
-
+    <div class="col-md-4">
+        <button onclick="addElement()" class="btn btn-secondary">add track</button>
+    </div>
+</div>
 
 </body>
 </html>
+
+
+
+
