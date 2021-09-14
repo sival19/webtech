@@ -14,14 +14,37 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-<script>function addTrack() {
-    console.log('added the track');
+
+<script>
+
+    function addElement() {
+
+        let x = document.getElementById("testing");
+        let new_field = document.createElement("input");
+        // set input field data type to text
+        new_field.setAttribute("type", "text");
+        new_field.setAttribute("id", "test")
+        // set input field name
+        new_field.setAttribute("name", "text_field[]");
+        // select last position to insert element before it
+        let pos = x.childElementCount;
+        // insert element
+        x.insertBefore(new_field, x.childNodes[pos]);
+        console.log(x.insertBefore(new_field, x.childNodes[pos]))
+    }
+
+</script>
+<script>function removeElement() {
+    let x = document.getElementById("test");
+    x.remove()
 }</script>
 <script>
 
-    function addElement(){
-        aValue = document.getElementById("validationCustom05").value
-        document.getElementById("validationCustom06").value = aValue;
+    // get the information when submitting form!!!!
+    function submitForm(event) {
+        event.preventDefault();
+
+        console.log(event.target['validationCustom05'].value);
     }
 
 </script>
@@ -29,8 +52,8 @@
 
 <div class="container">
     <!-- Content here -->
-
-    <form class="row g-3 needs-validation" novalidate>
+    <!--    onSubmit ..which function when submitting form-->
+    <form id="myForm" onSubmit="submitForm(event)" class="row g-3 needs-validation" novalidate>
         <div class="col-md-3">
             <label for="validationCustom01" class="form-label">Album name</label>
             <input type="text" class="form-control" id="validationCustom01" value="Name of the album" required>
@@ -78,17 +101,11 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5" id="testing">
                 <label for="validationCustom05" class="form-label">Tracks</label>
                 <input type="text" class="form-control" id="validationCustom05" required>
-                <input type="text" class="form-control" id="validationCustom06" required>
-                <input type="text" class="form-control" id="validationCustom07" required>
-                <input type="text" class="form-control" id="validationCustom08" required>
-                <input type="text" class="form-control" id="validationCustom09" required>
-                <input type="text" class="form-control" id="validationCustom10" required>
-                <input type="text" class="form-control" id="validationCustom11" required>
-                <input type="text" class="form-control" id="validationCustom12" required>
-                <input type="text" class="form-control" id="validationCustom13" required>
+                <button class="btn btn-secondary" onclick="addElement()">add</button>
+                <button class="btn btn-secondary" onclick="removeElement()">remove</button>
                 <div class="invalid-feedback">
                     Please provide a tack.
                 </div>
@@ -104,13 +121,6 @@
 
     </form>
 
-    <div class="col-md-5">
-        <button onclick="removeTrack()" type="submit" class="btn btn-secondary">remove track</button>
-    </div>
-
-    <div class="col-md-4">
-        <button onclick="addElement()" class="btn btn-secondary">add track</button>
-    </div>
 </div>
 
 </body>

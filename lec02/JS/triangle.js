@@ -5,7 +5,7 @@ let triangle = function (x, y) {
     }
 
 }
-let ele = document.getElementById("validationCustom05");
-let text = document.createTextNode("new track");
-ele.appendChild(text);
-document.body.appendChild(para);
+
+
+}
+
