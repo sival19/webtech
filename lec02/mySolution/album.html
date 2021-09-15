@@ -23,13 +23,15 @@
 
     function addElement() {
 
-        if (counter < 20 ) {
+        if (counter < 19 ) {
 
             let x = document.getElementById("testing");
             let new_field = document.createElement("input");
             // set input field data type to text
-            new_field.setAttribute("type", "text");
+            new_field.setAttribute("type", "form-control");
+            new_field.setAttribute("class", "form-control")
             new_field.setAttribute("id", "test")
+
             // set input field name
             new_field.setAttribute("name", "text_field[]");
             // select last position to insert element before it
