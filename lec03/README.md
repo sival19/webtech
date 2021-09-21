@@ -39,13 +39,14 @@ Pro tip: to send an array of data to the server (all tracks), the name of the in
 ## Extra exercise: Validation
 
 We have a validation strategy for the inputs of the form in JavaScript, but it is not enough (*Why?*).
-In this exercise you have to modify the page that receives the data and show a simple message, stating that the data received is not valid.
+In this exercise, your goal is to modify the page that receives the data and validate the inputs from the form.
+If the inputs are not valid, this page should display a simple message stating that the data is not valid.
 
 ## Extra exercise: Validation and messages
 
-A simple error message is not enough to the user of our web page to know what it is the real problem with the data.
-We have a similar validation in JavaScript, now you need to do the same but with PHP.
-Here, instead of posting the data to a new page, you are going to post it to the same form:
+A simple error message is not enough for the user of our web page to know what it is the real problem with the data.
+We have a similar validation in JavaScript that states which inputs are invalid, now you need to do the same but with PHP.
+In this exercise, instead of posting the data to a new page, you are going to post it to the same form, then:
 
 * If there is no ```$_POST``` data, it should display the normal form.
 * If there is ```$_POST``` data, it should verify the data and:
