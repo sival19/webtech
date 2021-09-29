@@ -17,10 +17,10 @@ Design the database and migration accordingly.
 ## Exercise: Create album form
 
 Now it is your job to create the album form, this time in Laravel.
-We suggest to create the `AlbumController` with create method for this.
+We suggest to create the `AlbumController` with `create` method for this.
 As a route, we also suggest to use the route `/albums/create`.
 
-In this form,  a user should select as an artist one of the artists already inside your database (if you do not have any, create a couple of them).
+In this form, a user should select as an artist for the album one of the artists already inside your database (if you do not have any, create a couple of them).
 In this Artist option list, the value of the input should be the id of the artist in the database, so you can find it afterwards!
 
 Remember to add the csrf token in your form.
@@ -29,9 +29,7 @@ Remember to add the csrf token in your form.
 ## Exercise: Save new album
 
 The data of the the previous form should be sent to a new method (we suggest to call this method `store`) from the same controller you created before, and here you have to save your new album into the database.
-We suggest to use the route `album` with the method `POST`.
-* Why do we use the method `POST`?*
-* Do we need form method spoofing here?*
+We suggest to use the route `albums` with the method `POST`. * Why do we use the method `POST`? * * Do we need form method spoofing here? *
 
 When finishing here, you can redirect to the `albums/create` route.
 
@@ -43,7 +41,7 @@ This index should have a list of all albums in the system with the following dat
 
 * Name
 * Artist name
-* # of tracks
+* \# of tracks
 
 Moreover, a button here is necessary to access the page to create a new album.
 *TIP: remember to use the url helper method to create links!*
@@ -52,5 +50,5 @@ Moreover, a button here is necessary to access the page to create a new album.
 
 When creating a new album, you need to notify the user that the album was saved successfully.
 To do this, you need to redirect from the method which you saved the album to the index of your application with a success message.
-Then in the index this success message should be displayed.
+Then, in the index this success message should be displayed.
 The success message should only be displayed after an album was successfully saved, not at all times!
