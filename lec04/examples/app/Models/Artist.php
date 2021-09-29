@@ -9,8 +9,8 @@ class Artist extends Model
 {
     use HasFactory;
 
-    public function albums() {
-        return $this->hasMany(Artist::class);
+    public function album() {
+        return $this->hasMany(Album::class);
     }
 
 }
