@@ -28,11 +28,10 @@ In this case, you are going to test a complete use case.
 We list the use case, and for each step, you need to write the necessary asserts for it:
 
 1. Go to the home page. Test you are in the right location.
-2. Click on the login link, fill login form and log in.
-3. You must be on another web page now, test it!
-4. Click on the link to create an album and create one.
-5. Test that you are in the right URL after creating the album, with the right Flash text.
-6. Test that the new album is listed on the Album index page.
+2. Login with a user in the test.
+3. Click on the link to create an album and create one.
+4. Test that you are in the right URL after creating the album, with the right Flash text.
+5. Test that the new album is listed on the Album index page.
 
 ## Extra: Test-driven development
 
