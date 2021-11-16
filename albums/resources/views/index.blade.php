@@ -1,15 +1,40 @@
-<html lang="">
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Artists</title>
+    <meta charset="utf-8">
+    <title>Ajax Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            loadFile();
+            let responseText = null;
+            let data = null;
+            function loadFile() {
+                $.ajax({
+                    url: "{{ route('home')}}",
+                    data: {
+                        "msg" : "One more album",
+                        "error" : 0
+                    }})
+                    .done(function(result){
+                        data = result;
+                        let ul = $('#list');
+                        for (album of data['albums']) {
+                            let li = $("<li></li>").appendTo(ul);
+                            li.text(album['name']);
+                        }
+                    })
+                    .fail(function() {
+                        alert("ERROR!");
+                    });
+            }
+        });
+    </script>
 </head>
 <body>
-<h1>Welcome to my webpage</h1>
 
-<ul>
-    @foreach($artists as $artist)
-    <li><a href="{{ route('artists.show', [$artist->id]) }}">{{ $artist->name }}</a></li>
-        @endforeach
+<ul id='list'>
+
 </ul>
 </body>
-
 </html>

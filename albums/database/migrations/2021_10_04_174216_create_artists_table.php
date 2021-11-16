@@ -20,6 +20,7 @@ class CreateArtistsTable extends Migration
         });
     }
 
+
     /**
      * Reverse the migrations.
      *
